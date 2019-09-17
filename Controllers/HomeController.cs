@@ -44,7 +44,7 @@ namespace MvcMovie.Controllers
             return View();
         }
 
-        public IActionResult LogIn()
+        public IActionResult SignedHome()
         {
             return View();
         }

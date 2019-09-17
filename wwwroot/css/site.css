@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     border: none;
+    background-color: black;
 }
 
 /*Landing Page CSS*/
@@ -212,4 +213,83 @@ list-style: none
         margin-right: 0;
         font-weight: 600
     }
+}
+
+/*Signed in area*/
+/*Grid layout for movies
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 5%;
+    padding: 1px;
+}
+
+.column img {
+    margin-top: 3px;
+    vertical-align: middle;
+    width: 100%;
+    height: 220px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.column img:hover {
+    opacity:0.5;
+}*/
+
+/* Responsive layout - makes a two column-layout instead of four columns
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 25%;
+        max-width: 25%;
+    }
+}*/
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}*/
+
+.column {
+    float: left;
+    width: 12.5%;
+    padding:2px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    width: 100%;
+    margin: 0px;
+    margin-top:40px;
+}
+
+.column img {
+    vertical-align: middle;
+    width: 100%;
+    height: 220px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+    .column img:hover {
+        opacity: 0.5;
+    }
+
+#navbar2 {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+    width:100%;
+    height:70px
 }

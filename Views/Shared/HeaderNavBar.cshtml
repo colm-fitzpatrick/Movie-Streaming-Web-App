@@ -1,6 +1,6 @@
-﻿<nav class="navbar navbar-inverse">
+﻿<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar2">
     <div class="navbar-brand">
-        <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img src="C:\Users\Colm\source\repos\MvcMovie\wwwroot\images\movio2.png" id="image1"></a>
+        <a asp-area="" asp-controller="Home" asp-action="SignedHome" class="navbar-brand"><img src="~/images/movio2.png" id="image1"></a>
     </div>
     <div class="container">
         <div class="navbar-header">
@@ -18,10 +18,10 @@
                 <li><a asp-area="" asp-controller="Home" asp-action="Movie">Movies</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#myModal" data-toggle="modal" class="glyphicon glyphicon-user"> Register</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="LogIn" class="glyphicon glyphicon-log-in"> Login</a></li>
-            </ul>
+            <div class="nav navbar-nav navbar-right" id="searchbox">
+                <li><a class="search" href="#"><i class="fa fa-search"></i></a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-sign-out"></i></a></li>
+            </div>
         </div>
     </div>
 </nav>
@@ -77,9 +77,6 @@
 
                 </div>
             </div>
-            <!--                                    <div class="modal-footer">-->
-            <!--                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-            <!--                                    </div>-->
         </div>
     </div>
 </div>
